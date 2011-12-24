@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+            android:id="@+id/label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello"
+            android:textColor="@color/labelTextColor"
+            android:background="@color/labelBGC"
+            />
+
+    <!--<Button android:id="@+id/button"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:onClick="onClickHandler"/>-->
+
+    <!--<ImageView android:id="@+id/iv"-->
+               <!--android:src="@drawable/ic_launcher"-->
+               <!--android:adjustViewBounds="true"-->
+               <!--android:layout_height="wrap_content"-->
+               <!--android:layout_width="fill_parent"/>-->
+
+    <!--<EditText android:id="@+id/et"-->
+              <!--android:layout_width="fill_parent"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--android:singleLine="false"-->
+              <!--android:autoText="false"/>-->
+    <!--<RadioGroup-->
+            <!--android:id="@+id/rg"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content">-->
+        <!--<RadioButton-->
+                <!--android:id="@+id/op1"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="option1"/>-->
+        <!--<RadioButton-->
+                <!--android:id="@+id/op2"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="option2"/>-->
+        <!--<RadioButton-->
+                <!--android:id="@+id/op3"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="option3"/>-->
+    <!--</RadioGroup>-->
+
+
+</LinearLayout>
+
