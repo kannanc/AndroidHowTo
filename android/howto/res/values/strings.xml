@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">AndroidHowTo</string>
     <string name="hello">Click me to update the current time</string>
+    <string name="btnDemo">To demo Button Widget</string>
 </resources>
