@@ -34,4 +34,11 @@ public class MyActivity extends Activity {
         Intent btnDemoIntent = new Intent(this, ButtonActivity.class);
         startActivity(btnDemoIntent);
     }
+    
+    public void textViewDemoHandler(View view) {
+        Intent tvDemoIntent = new Intent(this, TextViewActivity.class);
+        startActivity(tvDemoIntent);
+    }
 }
+
+
