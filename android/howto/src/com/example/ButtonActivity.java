@@ -13,7 +13,7 @@ import java.util.Random;
  *
  * @author http://kannanchandrasekaran.com
  */
-public class ButtonActivity extends Activity {
+public class ButtonActivity extends BaseDemoActivity {
     /**
      * Go to the Main Demo activity
      */
@@ -43,13 +43,4 @@ public class ButtonActivity extends Activity {
         m_button.setText("Setting random no to : " + m_rand.nextDouble());
     }
 
-    /**
-     * Go to the main activityPage
-     *
-     * @param view
-     */
-    public void goHome(View view) {
-        Intent home = new Intent(this, MyActivity.class);
-        startActivity(home);
-    }
 }

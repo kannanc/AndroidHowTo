@@ -15,6 +15,12 @@
               android:layout_height="wrap_content"
               android:layout_width="match_parent"
               android:text="I am a non-editable label"
-              android:typeface="serif"
-              android:textStyle="bold"/>
+            />
+
+    <EditText android:id="@+id/editText"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:text="I am a editable text"
+              android:singleLine="false"/>
+
 </LinearLayout>

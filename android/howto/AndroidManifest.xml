@@ -14,8 +14,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="ButtonActivity"
-                  android:label="@string/btnDemo"/>
+        <activity android:name="ButtonActivity" android:label="@string/btnDemo"/>
+
         <activity android:name="TextViewActivity" android:label="@string/textviewDemo"/>
 
 

@@ -9,11 +9,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /**
- * Provides...
+ * Demo for TextView and EditText
  *
  * @author http://kannanchandrasekaran.com
  */
-public class TextViewActivity extends Activity {
+public class TextViewActivity extends BaseDemoActivity {
     Button m_home;
     TextView m_tv;
 
@@ -23,18 +23,8 @@ public class TextViewActivity extends Activity {
         setContentView(R.layout.tvactivity);
 
         m_tv = (TextView) findViewById(R.id.textview);
-        m_tv.setTypeface(Typeface.SANS_SERIF,Typeface.BOLD_ITALIC);
+        m_tv.setTypeface(Typeface.SANS_SERIF, Typeface.BOLD_ITALIC);
         m_home = (Button) findViewById(R.id.home);
 
-    }
-
-    /**
-     * Go to the main activityPage
-     *
-     * @param view
-     */
-    public void goHome(View view) {
-        Intent home = new Intent(this, MyActivity.class);
-        startActivity(home);
     }
 }

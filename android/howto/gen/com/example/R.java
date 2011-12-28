@@ -22,6 +22,7 @@ public final class R {
         public static final int btn3=0x7f060004;
         public static final int btnDemo=0x7f060002;
         public static final int button=0x7f060001;
+        public static final int editText=0x7f060006;
         public static final int home=0x7f060000;
         public static final int textview=0x7f060005;
     }
