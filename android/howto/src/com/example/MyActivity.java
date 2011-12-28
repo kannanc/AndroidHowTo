@@ -26,17 +26,17 @@ public class MyActivity extends Activity {
     }
 
     /**
-     * Start the {@code ButtonActivity}
+     * Start the {@code ButtonDemo}
      *
      * @param view
      */
     public void onClickButtonDemoHandler(View view) {
-        Intent btnDemoIntent = new Intent(this, ButtonActivity.class);
+        Intent btnDemoIntent = new Intent(this, ButtonDemo.class);
         startActivity(btnDemoIntent);
     }
     
     public void textViewDemoHandler(View view) {
-        Intent tvDemoIntent = new Intent(this, TextViewActivity.class);
+        Intent tvDemoIntent = new Intent(this, LabelDemo.class);
         startActivity(tvDemoIntent);
     }
 }

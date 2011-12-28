@@ -13,7 +13,7 @@ import java.util.Random;
  *
  * @author http://kannanchandrasekaran.com
  */
-public class ButtonActivity extends BaseDemoActivity {
+public class ButtonDemo extends BaseDemoActivity {
     /**
      * Go to the Main Demo activity
      */

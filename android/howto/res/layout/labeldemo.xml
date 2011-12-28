@@ -14,8 +14,7 @@
     <TextView android:id="@+id/textview"
               android:layout_height="wrap_content"
               android:layout_width="match_parent"
-              android:text="I am a non-editable label"
-            />
+              android:text="I am a non-editable label"/>
 
     <EditText android:id="@+id/editText"
               android:layout_height="wrap_content"
