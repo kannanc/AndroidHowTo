@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/GreyishBlue"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <Button android:id="@+id/home"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:onClick="goHome"
+                android:text="Home"/>
+
+    <CheckBox android:id="@+id/checkbox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Check Me"/>
+
+    <RadioButton android:id="@+id/rbutton"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="I am a radio..but not in the group :-("/>
+    <TextView android:id="@+id/tv"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Who is selected ?"/>
+
+    <RadioGroup android:id="@+id/rgroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="option1"/>
+        <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="option2"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>

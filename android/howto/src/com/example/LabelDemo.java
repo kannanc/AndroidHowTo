@@ -14,7 +14,6 @@ import android.widget.TextView;
  * @author http://kannanchandrasekaran.com
  */
 public class LabelDemo extends BaseDemoActivity {
-    Button m_home;
     TextView m_tv;
     EditText m_et;
 

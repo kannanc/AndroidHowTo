@@ -1,4 +1,9 @@
 <resources>
-    <color name="labelTextColor">#F5775C</color>
-    <color name="labelBGC">#CCCCCC</color>
+    <color name="LightRed">#F5775C</color>
+    <color name="DarkGrey">#CCCCCC</color>
+    <color name="LightGrey">#E8EDE4</color>
+    <color name="LightOrange">#EDA96D</color>
+    <color name="LightGreen">#09B39C</color>
+    <color name="DullBlue">#3A786D</color>
+    <color name="GreyishBlue">#3A3A3D</color>
 </resources>

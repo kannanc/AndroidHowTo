@@ -11,9 +11,7 @@ import android.widget.Button;
  *
  * @author http://kannanchandrasekaran.com
  */
-public class MyActivity extends Activity {
-    Button m_demoBtn;
-
+public class MainActivity extends Activity {
     /**
      * Called when the activity is first created.
      */
@@ -21,24 +19,25 @@ public class MyActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
-        m_demoBtn = (Button) findViewById(R.id.btnDemo);
     }
 
-    /**
-     * Start the {@code ButtonDemo}
-     *
-     * @param view
-     */
     public void onClickButtonDemoHandler(View view) {
-        Intent btnDemoIntent = new Intent(this, ButtonDemo.class);
-        startActivity(btnDemoIntent);
+        launchActivity(ButtonDemo.class);
     }
-    
-    public void textViewDemoHandler(View view) {
-        Intent tvDemoIntent = new Intent(this, LabelDemo.class);
-        startActivity(tvDemoIntent);
+
+    public void labelDemoHandler(View view) {
+        launchActivity(LabelDemo.class);
     }
+
+    public void optionsDemoHandler(View view) {
+        launchActivity(OptionsDemo.class);
+    }
+
+    private <T> void launchActivity(Class<T> cls) {
+        Intent intent = new Intent(this, cls);
+        startActivity(intent);
+    }
+
 }
 
 
