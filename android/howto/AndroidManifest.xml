@@ -21,5 +21,7 @@
         <activity android:name="LabelDemo" android:label="@string/textviewDemo"/>
 
         <activity android:name="OptionsDemo" android:label="@string/optionDemo"/>
+        <activity android:name="LinearLayoutDemo" android:label="@string/linearLayoutDemo"/>
+        <activity android:name="TableLayoutDemo" android:label="@string/tableLayoutDemo"/>
     </application>
 </manifest>

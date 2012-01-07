@@ -23,29 +23,50 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int btn2=0x7f060005;
-        public static final int btn3=0x7f060006;
-        public static final int btnDemo=0x7f060004;
+        public static final int btn2=0x7f06000f;
+        public static final int btn3=0x7f060010;
+        public static final int btn4=0x7f060011;
+        public static final int btn5=0x7f060012;
+        public static final int btnDemo=0x7f06000e;
         public static final int button=0x7f060001;
-        public static final int checkbox=0x7f060007;
+        public static final int checkbox=0x7f060013;
         public static final int editText=0x7f060003;
         public static final int home=0x7f060000;
-        public static final int rbutton=0x7f060008;
-        public static final int rgroup=0x7f06000a;
+        public static final int r0=0x7f060018;
+        public static final int r1=0x7f060019;
+        public static final int r2=0x7f06001a;
+        public static final int r3=0x7f06001b;
+        public static final int rbutton=0x7f060014;
+        public static final int rgroup=0x7f060016;
+        public static final int tbl=0x7f060017;
         public static final int textview=0x7f060002;
-        public static final int tv=0x7f060009;
+        public static final int tv=0x7f060015;
+        public static final int tv1=0x7f060004;
+        public static final int tv10=0x7f06000d;
+        public static final int tv2=0x7f060005;
+        public static final int tv3=0x7f060006;
+        public static final int tv4=0x7f060007;
+        public static final int tv5=0x7f060008;
+        public static final int tv6=0x7f060009;
+        public static final int tv7=0x7f06000a;
+        public static final int tv8=0x7f06000b;
+        public static final int tv9=0x7f06000c;
     }
     public static final class layout {
         public static final int buttonactivity=0x7f030000;
         public static final int labeldemo=0x7f030001;
-        public static final int main=0x7f030002;
-        public static final int optionsdemo=0x7f030003;
+        public static final int linearlayoutdemo=0x7f030002;
+        public static final int main=0x7f030003;
+        public static final int optionsdemo=0x7f030004;
+        public static final int tablelayout=0x7f030005;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
         public static final int btnDemo=0x7f050002;
         public static final int hello=0x7f050001;
+        public static final int linearLayoutDemo=0x7f050005;
         public static final int optionDemo=0x7f050004;
+        public static final int tableLayoutDemo=0x7f050006;
         public static final int textviewDemo=0x7f050003;
     }
 }

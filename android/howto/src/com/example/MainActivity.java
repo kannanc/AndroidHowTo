@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 /**
  * Main demo activity page intended to demo the individual android components.
@@ -31,6 +30,14 @@ public class MainActivity extends Activity {
 
     public void optionsDemoHandler(View view) {
         launchActivity(OptionsDemo.class);
+    }
+
+    public void linearLayoutDemoLauncher(View view) {
+        launchActivity(LinearLayoutDemo.class);
+    }
+
+    public void TableLayoutDemoLauncher(View view) {
+        launchActivity(TableLayoutDemo.class);
     }
 
     private <T> void launchActivity(Class<T> cls) {

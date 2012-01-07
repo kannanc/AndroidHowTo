@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <Button android:id="@+id/home"
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               android:onClick="goHome"
+               android:text="Home"/>
+
+
+    <TextView android:id="@+id/tv1"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:background="@color/DullBlue"
+              android:text="I take only as much as I need"/>
+
+    <TextView android:id="@+id/tv2"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:background="@color/LightRed"
+              android:text="I fill up the entire space"/>
+
+    <TextView android:id="@+id/tv3"
+              android:layout_height="wrap_content"
+              android:layout_width="100dip"
+              android:background="@color/DullBlue"
+              android:text="I can grow tall but not fat"/>
+
+    <TextView android:id="@+id/tv4"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:background="@color/LightRed"
+              android:text="I gravitate towards the center"/>
+
+    <TextView android:id="@+id/tv5"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_gravity="right"
+              android:background="@color/DullBlue"
+              android:text="I gravitate towards right"/>
+
+    <TextView android:id="@+id/tv6"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_gravity="left"
+              android:background="@color/LightRed"
+              android:text="I gravitate towards left"/>
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/tv7"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:background="@color/DullBlue"
+                  android:layout_marginTop="5dip"
+                  android:layout_marginRight="20dip"
+                  android:layout_marginLeft="5dip"
+                  android:text="I have different Margins"/>
+        <TextView android:id="@+id/tv8"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:background="@color/DullBlue"
+                  android:layout_margin="10dip"
+                  android:text="I have Global Margin"/>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/tv9"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:background="@color/LightRed"
+                  android:layout_weight="70"
+                  android:text="I have more weight"/>
+
+        <TextView android:id="@+id/tv10"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:background="@color/DullBlue"
+                  android:text="I have less weight"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/tv10"
+                      android:layout_height="fill_parent"
+                      android:layout_width="fill_parent"
+                      android:background="@color/GreyishBlue"
+                      android:text="I take up the remaining space"/>
+</LinearLayout>

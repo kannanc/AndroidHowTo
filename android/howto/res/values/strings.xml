@@ -5,4 +5,6 @@
     <string name="btnDemo">To demo Button Widget</string>
     <string name="textviewDemo">To Demo TextView and EditText Widgets</string>
     <string name="optionDemo">To Demo the CheckBox and RadioButton Widgets</string>
+    <string name="linearLayoutDemo">To demo the linear layout</string>
+    <string name="tableLayoutDemo">To Demo the Table layout</string>
 </resources>
