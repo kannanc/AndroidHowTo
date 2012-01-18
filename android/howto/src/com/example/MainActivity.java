@@ -36,8 +36,16 @@ public class MainActivity extends Activity {
         launchActivity(LinearLayoutDemo.class);
     }
 
-    public void TableLayoutDemoLauncher(View view) {
+    public void tableLayoutDemoLauncher(View view) {
         launchActivity(TableLayoutDemo.class);
+    }
+
+    public void relLayoutDemoLauncher(View view) {
+        launchActivity(RelativeLayoutDemo.class);
+    }
+
+    public void frameLayoutDemoLauncher(View view) {
+        launchActivity(FrameLayoutDemo.class);
     }
 
     private <T> void launchActivity(Class<T> cls) {

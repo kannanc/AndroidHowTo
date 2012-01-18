@@ -7,4 +7,6 @@
     <string name="optionDemo">To Demo the CheckBox and RadioButton Widgets</string>
     <string name="linearLayoutDemo">To demo the linear layout</string>
     <string name="tableLayoutDemo">To Demo the Table layout</string>
+    <string name="relLayoutDemo">To Demo the Relative Layout</string>
+    <string name="frameLayoutDemo">To Demo frame layout</string>
 </resources>
