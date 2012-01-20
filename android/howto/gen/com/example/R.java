@@ -44,11 +44,9 @@ public final class R {
         public static final int nameText=0x7f06001f;
         public static final int r1=0x7f060023;
         public static final int r2=0x7f060027;
-        public static final int r3=0x7f06002e;
         public static final int rbutton=0x7f06001a;
         public static final int rgroup=0x7f06001c;
         public static final int submit=0x7f060022;
-        public static final int tbl=0x7f06002d;
         public static final int tbl_Cancel=0x7f06002c;
         public static final int tbl_addr=0x7f060028;
         public static final int tbl_addrText=0x7f060029;
@@ -74,13 +72,13 @@ public final class R {
     public static final class layout {
         public static final int buttonactivity=0x7f030000;
         public static final int framelayoutdemo=0x7f030001;
-        public static final int labeldemo=0x7f030002;
-        public static final int linearlayoutdemo=0x7f030003;
-        public static final int main=0x7f030004;
-        public static final int optionsdemo=0x7f030005;
-        public static final int relativelayoutdemo=0x7f030006;
-        public static final int tablelayout=0x7f030007;
-        public static final int tablelayout_old=0x7f030008;
+        public static final int imfdemo=0x7f030002;
+        public static final int labeldemo=0x7f030003;
+        public static final int linearlayoutdemo=0x7f030004;
+        public static final int main=0x7f030005;
+        public static final int optionsdemo=0x7f030006;
+        public static final int relativelayoutdemo=0x7f030007;
+        public static final int tablelayout=0x7f030008;
     }
     public static final class string {
         public static final int app_name=0x7f050000;

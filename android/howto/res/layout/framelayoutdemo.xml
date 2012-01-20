@@ -5,31 +5,32 @@
              android:layout_height="fill_parent">
 
     <TextView android:id="@+id/f1"
-              android:text="Frame 1"
+              android:text="card 1"
               android:textSize="50sp"
               android:gravity="center"
               android:visibility="visible"
               android:clickable="true"
               android:background="@color/DullBlue"
-              android:layout_height="match_parent"
+              android:layout_height="wrap_content"
               android:layout_width="match_parent"/>
     <TextView android:id="@+id/f2"
-              android:text="Frame 2"
+              android:text="card 2"
               android:gravity="center"
+              android:layout_gravity="center"
               android:textSize="50sp"
               android:visibility="invisible"
               android:clickable="true"
               android:background="@color/LightRed"
-              android:layout_height="match_parent"
+              android:layout_height="wrap_content"
               android:layout_width="match_parent"/>
     <TextView android:id="@+id/f3"
-              android:text="Frame 3"
+              android:text="card 3"
               android:clickable="true"
               android:gravity="center"
+              android:layout_gravity="bottom"
               android:textSize="50sp"
               android:background="@color/LightOrange"
               android:visibility="invisible"
-              android:layout_height="match_parent"
+              android:layout_height="wrap_content"
               android:layout_width="match_parent"/>
-
 </FrameLayout>
