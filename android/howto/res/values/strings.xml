@@ -9,4 +9,5 @@
     <string name="tableLayoutDemo">To Demo the Table layout</string>
     <string name="relLayoutDemo">To Demo the Relative Layout</string>
     <string name="frameLayoutDemo">To Demo frame layout</string>
+    <string name="imfDemo">To Demo Input Method Framework</string>
 </resources>

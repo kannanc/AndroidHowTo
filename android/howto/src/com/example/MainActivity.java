@@ -48,6 +48,10 @@ public class MainActivity extends Activity {
         launchActivity(FrameLayoutDemo.class);
     }
 
+    public void imfDemoLauncher(View view) {
+        launchActivity(SoftKBDemo.class);
+    }
+
     private <T> void launchActivity(Class<T> cls) {
         Intent intent = new Intent(this, cls);
         startActivity(intent);
