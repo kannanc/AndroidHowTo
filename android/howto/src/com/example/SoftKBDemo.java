@@ -10,7 +10,6 @@ import android.os.Bundle;
  * Note: This example code should only be run on a
  * AVD that has no physical keyboard.
  *
- * @author http://kannanchandrasekaran.com
  */
 public class SoftKBDemo extends Activity{
     @Override
