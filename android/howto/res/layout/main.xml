@@ -78,9 +78,35 @@
                     android:layout_width="wrap_content"
                     android:layout_weight="33"
                     android:onClick="imfDemoLauncher"
-                    android:text="IMF Demo"/>
+                    android:text="Soft KB Demo"/>
 
-            <!--<Button android:id="@+id/btn2"-->
+            <Button android:id="@+id/btn9"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="33"
+                    android:onClick="listviewDemoLauncher"
+                    android:text="ListView Demo"/>
+
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+            <Button android:id="@+id/btn10"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="spinnerDemoLauncher"
+                    android:layout_weight="33"
+                    android:text="Spinner Demo"/>
+
+            <!--<Button android:id="@+id/btn8"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_weight="33"-->
+            <!--android:onClick="clickHandler"-->
+            <!--android:text="Demo"/>-->
+
+            <!--<Button android:id="@+id/btn9"-->
             <!--android:layout_height="wrap_content"-->
             <!--android:layout_width="wrap_content"-->
             <!--android:layout_weight="33"-->
@@ -88,33 +114,6 @@
             <!--android:text="Demo"/>-->
 
         </LinearLayout>
-        <!--<LinearLayout android:orientation="horizontal"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content">-->
-
-
-        <!--<Button android:id="@+id/btn7"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:onClick="clickHandler"-->
-        <!--android:layout_weight="33"-->
-        <!--android:text="Demo"/>-->
-
-        <!--<Button android:id="@+id/btn8"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_weight="33"-->
-        <!--android:onClick="clickHandler"-->
-        <!--android:text="Demo"/>-->
-
-        <!--<Button android:id="@+id/btn9"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_weight="33"-->
-        <!--android:onClick="clickHandler"-->
-        <!--android:text="Demo"/>-->
-
-        <!--</LinearLayout>-->
         <!--<LinearLayout android:orientation="horizontal"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content">-->
