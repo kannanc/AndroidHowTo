@@ -20,13 +20,15 @@
 
         <activity android:name="LabelDemo" android:label="@string/textviewDemo"/>
 
-        <activity android:name="OptionsDemo" android:label="@string/optionDemo"/>
-        <activity android:name="LinearLayoutDemo" android:label="@string/linearLayoutDemo"/>
-        <activity android:name="TableLayoutDemo" android:label="@string/tableLayoutDemo"/>
-        <activity android:name="RelativeLayoutDemo" android:label="@string/relLayoutDemo"/>
-        <activity android:name="FrameLayoutDemo" android:label="@string/frameLayoutDemo"/>
-        <activity android:name="SoftKBDemo"
+        <activity android:name=".OptionsDemo" android:label="@string/optionDemo"/>
+        <activity android:name=".LinearLayoutDemo" android:label="@string/linearLayoutDemo"/>
+        <activity android:name=".TableLayoutDemo" android:label="@string/tableLayoutDemo"/>
+        <activity android:name=".RelativeLayoutDemo" android:label="@string/relLayoutDemo"/>
+        <activity android:name=".FrameLayoutDemo" android:label="@string/frameLayoutDemo"/>
+        <activity android:name=".SoftKBDemo"
                   android:windowSoftInputMode="adjustPan"
                   />
+        <activity android:name=".ListViewDemo" android:label="@string/listdemo"/>
+        <activity android:name=".SpinnerDemo" android:label="@string/spinnerDemo"/>
     </application>
 </manifest>

@@ -52,6 +52,14 @@ public class MainActivity extends Activity {
         launchActivity(SoftKBDemo.class);
     }
 
+    public void listviewDemoLauncher(View view) {
+        launchActivity(ListViewDemo.class);
+    }
+
+    public void spinnerDemoLauncher(View view) {
+        launchActivity(SpinnerDemo.class);
+    }
+
     private <T> void launchActivity(Class<T> cls) {
         Intent intent = new Intent(this, cls);
         startActivity(intent);
