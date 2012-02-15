@@ -99,12 +99,12 @@
                     android:layout_weight="33"
                     android:text="Spinner Demo"/>
 
-            <!--<Button android:id="@+id/btn8"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_weight="33"-->
-            <!--android:onClick="clickHandler"-->
-            <!--android:text="Demo"/>-->
+            <Button android:id="@+id/btn11"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="33"
+            android:onClick="toastDemoLauncher"
+            android:text="Toast Demo"/>
 
             <!--<Button android:id="@+id/btn9"-->
             <!--android:layout_height="wrap_content"-->

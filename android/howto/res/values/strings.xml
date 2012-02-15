@@ -12,6 +12,7 @@
     <string name="imfDemo">To Demo Soft/virtual Keyboards</string>
     <string name="listdemo">To Demo list view</string>
     <string name="spinnerDemo">To Demo Spinner</string>
+    <string name="toastDemo">To Demo Popup messages</string>
 
     <string-array name="dev_platforms">
         <item>Android</item>

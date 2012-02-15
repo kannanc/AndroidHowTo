@@ -59,6 +59,9 @@ public class MainActivity extends Activity {
     public void spinnerDemoLauncher(View view) {
         launchActivity(SpinnerDemo.class);
     }
+    public void toastDemoLauncher(View view) {
+        launchActivity(ToastDemo.class);
+    }
 
     private <T> void launchActivity(Class<T> cls) {
         Intent intent = new Intent(this, cls);

@@ -30,5 +30,6 @@
                 />
         <activity android:name=".ListViewDemo" android:label="@string/listdemo"/>
         <activity android:name=".SpinnerDemo" android:label="@string/spinnerDemo"/>
+        <activity android:name=".ToastDemo" android:label="@string/toastDemo"/>
     </application>
 </manifest>
