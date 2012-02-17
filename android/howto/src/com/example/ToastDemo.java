@@ -23,7 +23,7 @@ public class ToastDemo extends Activity {
         toastBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(ToastDemo.this, "Here is a toast..to Android !!!", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(ToastDemo.this, "Here is a toast..to Android !!!", Toast.LENGTH_LONG);
                 toast.setGravity(Gravity.CENTER, 10,10);
                 toast.show();
             }
@@ -37,7 +37,7 @@ public class ToastDemo extends Activity {
             public void onClick(View v) {
                 Toast toast = new Toast(ToastDemo.this);
                 toast.setView(toastView);
-                toast.setDuration(Toast.LENGTH_SHORT);
+                toast.setDuration(Toast.LENGTH_LONG);
                 toast.show();
             }
         });
