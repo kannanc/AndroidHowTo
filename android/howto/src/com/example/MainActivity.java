@@ -11,62 +11,67 @@ import android.view.View;
  * @author http://kannanchandrasekaran.com
  */
 public class MainActivity extends Activity {
-    /**
-     * Called when the activity is first created.
-     */
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-    }
+   /**
+    * Called when the activity is first created.
+    */
+   @Override
+   public void onCreate(Bundle savedInstanceState) {
+      super.onCreate(savedInstanceState);
+      setContentView(R.layout.main);
+   }
 
-    public void onClickButtonDemoHandler(View view) {
-        launchActivity(ButtonDemo.class);
-    }
+   public void onClickButtonDemoHandler(View view) {
+      launchActivity(ButtonDemo.class);
+   }
 
-    public void labelDemoHandler(View view) {
-        launchActivity(LabelDemo.class);
-    }
+   public void labelDemoHandler(View view) {
+      launchActivity(LabelDemo.class);
+   }
 
-    public void optionsDemoHandler(View view) {
-        launchActivity(OptionsDemo.class);
-    }
+   public void optionsDemoHandler(View view) {
+      launchActivity(OptionsDemo.class);
+   }
 
-    public void linearLayoutDemoLauncher(View view) {
-        launchActivity(LinearLayoutDemo.class);
-    }
+   public void linearLayoutDemoLauncher(View view) {
+      launchActivity(LinearLayoutDemo.class);
+   }
 
-    public void tableLayoutDemoLauncher(View view) {
-        launchActivity(TableLayoutDemo.class);
-    }
+   public void tableLayoutDemoLauncher(View view) {
+      launchActivity(TableLayoutDemo.class);
+   }
 
-    public void relLayoutDemoLauncher(View view) {
-        launchActivity(RelativeLayoutDemo.class);
-    }
+   public void relLayoutDemoLauncher(View view) {
+      launchActivity(RelativeLayoutDemo.class);
+   }
 
-    public void frameLayoutDemoLauncher(View view) {
-        launchActivity(FrameLayoutDemo.class);
-    }
+   public void frameLayoutDemoLauncher(View view) {
+      launchActivity(FrameLayoutDemo.class);
+   }
 
-    public void imfDemoLauncher(View view) {
-        launchActivity(SoftKBDemo.class);
-    }
+   public void imfDemoLauncher(View view) {
+      launchActivity(SoftKBDemo.class);
+   }
 
-    public void listviewDemoLauncher(View view) {
-        launchActivity(ListViewDemo.class);
-    }
+   public void listviewDemoLauncher(View view) {
+      launchActivity(ListViewDemo.class);
+   }
 
-    public void spinnerDemoLauncher(View view) {
-        launchActivity(SpinnerDemo.class);
-    }
-    public void toastDemoLauncher(View view) {
-        launchActivity(ToastDemo.class);
-    }
+   public void spinnerDemoLauncher(View view) {
+      launchActivity(SpinnerDemo.class);
+   }
 
-    private <T> void launchActivity(Class<T> cls) {
-        Intent intent = new Intent(this, cls);
-        startActivity(intent);
-    }
+   public void toastDemoLauncher(View view) {
+      launchActivity(ToastDemo.class);
+   }
+
+   public void alertDemoLauncher(View view) {
+      launchActivity(AlertDemo.class);
+   }
+
+   private <T> void launchActivity(Class<T> cls) {
+      Intent intent = new Intent(this, cls);
+      startActivity(intent);
+   }
 
 }
 
