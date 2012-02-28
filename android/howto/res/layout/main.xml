@@ -83,6 +83,33 @@
             <Button android:id="@+id/btn9"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:onClick="spinnerDemoLauncher"
+                    android:layout_weight="33"
+                    android:text="Spinner Demo"/>
+
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+
+            <Button android:id="@+id/btn10"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="33"
+                    android:onClick="toastDemoLauncher"
+                    android:text="Toast Demo"/>
+
+            <Button android:id="@+id/btn11"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="33"
+                    android:onClick="alertDemoLauncher"
+                    android:text="Alert Demo"/>
+
+            <Button android:id="@+id/btn12"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
                     android:layout_weight="33"
                     android:onClick="listviewDemoLauncher"
                     android:text="ListView Demo"/>
@@ -92,55 +119,29 @@
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content">
 
-            <Button android:id="@+id/btn10"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:onClick="spinnerDemoLauncher"
-                    android:layout_weight="33"
-                    android:text="Spinner Demo"/>
 
-            <Button android:id="@+id/btn11"
+            <Button android:id="@+id/btn13"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:onClick="listViewCustomLayoutDemoLauncher"
                     android:layout_weight="33"
-                    android:onClick="toastDemoLauncher"
-                    android:text="Toast Demo"/>
+                    android:text="ListView Custom"/>
 
-            <Button android:id="@+id/btn12"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_weight="33"
-                    android:onClick="alertDemoLauncher"
-                    android:text="Alert Demo"/>
+            <!--<Button android:id="@+id/btn11"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_weight="33"-->
+            <!--android:onClick="clickHandler"-->
+            <!--android:text="Demo"/>-->
+
+            <!--<Button android:id="@+id/btn12"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_weight="33"-->
+            <!--android:onClick="clickHandler"-->
+            <!--android:text="Demo"/>-->
 
         </LinearLayout>
-        <!--<LinearLayout android:orientation="horizontal"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content">-->
-
-
-        <!--<Button android:id="@+id/btn10"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:onClick="clickHandler"-->
-        <!--android:layout_weight="33"-->
-        <!--android:text="Demo"/>-->
-
-        <!--<Button android:id="@+id/btn11"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_weight="33"-->
-        <!--android:onClick="clickHandler"-->
-        <!--android:text="Demo"/>-->
-
-        <!--<Button android:id="@+id/btn12"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_weight="33"-->
-        <!--android:onClick="clickHandler"-->
-        <!--android:text="Demo"/>-->
-
-        <!--</LinearLayout>-->
         <!--<LinearLayout android:orientation="horizontal"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content">-->
