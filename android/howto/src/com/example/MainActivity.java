@@ -59,6 +59,9 @@ public class MainActivity extends Activity {
    public void listViewCustomLayoutDemoLauncher(View view) {
       launchActivity(ListViewCustomLayout.class);
    }
+   public void listViewInteractDemoLauncher(View view) {
+      launchActivity(ListViewInteractDemo.class);
+   }
 
    public void spinnerDemoLauncher(View view) {
       launchActivity(SpinnerDemo.class);

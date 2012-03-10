@@ -30,7 +30,7 @@
                 />
         <activity android:name=".ListViewDemo" android:label="@string/listdemo"/>
         <activity android:name=".ListViewCustomLayout" android:label="@string/listCustomLayout"/>
-        <!--<activity android:name=".ListViewDemo" android:label="@string/listdemo"/>-->
+        <activity android:name=".ListViewInteractDemo" android:label="@string/listInteract"/>
         <activity android:name=".SpinnerDemo" android:label="@string/spinnerDemo"/>
         <activity android:name=".ToastDemo" android:label="@string/toastDemo"/>
         <activity android:name=".AlertDemo" android:label="@string/alertDemo"/>
