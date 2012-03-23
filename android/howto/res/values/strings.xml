@@ -16,6 +16,7 @@
     <string name="toastDemo">To Demo Popup messages</string>
     <string name="alertDemo">To Demo Alert dialog</string>
     <string name="listInteract">To Demo list view with some interaction</string>
+    <string name="browserDemo">To demo WebView</string>
 
     <string-array name="dev_platforms">
     <item>Android</item>

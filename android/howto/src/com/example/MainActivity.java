@@ -75,6 +75,10 @@ public class MainActivity extends Activity {
       launchActivity(AlertDemo.class);
    }
 
+   public void browserDemoLauncher(View view) {
+      launchActivity(WebViewDemo.class);
+   }
+
    private <T> void launchActivity(Class<T> cls) {
       Intent intent = new Intent(this, cls);
       startActivity(intent);

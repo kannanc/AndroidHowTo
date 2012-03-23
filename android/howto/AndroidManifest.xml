@@ -34,5 +34,8 @@
         <activity android:name=".SpinnerDemo" android:label="@string/spinnerDemo"/>
         <activity android:name=".ToastDemo" android:label="@string/toastDemo"/>
         <activity android:name=".AlertDemo" android:label="@string/alertDemo"/>
+        <activity android:name=".WebViewDemo" android:label="@string/browserDemo"/>
     </application>
+    <!--Specify the permissions that the application uses-->
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>
