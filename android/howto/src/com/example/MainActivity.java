@@ -79,6 +79,10 @@ public class MainActivity extends Activity {
       launchActivity(WebViewDemo.class);
    }
 
+   public void galleryDemoLauncher(View view) {
+      launchActivity(GalleryDemo.class);
+   }
+
    private <T> void launchActivity(Class<T> cls) {
       Intent intent = new Intent(this, cls);
       startActivity(intent);
