@@ -18,12 +18,13 @@
     <string name="listInteract">To Demo list view with some interaction</string>
     <string name="browserDemo">To demo WebView</string>
     <string name="galleryDemo">To demo Gallery Widget</string>
+    <string name="menuDemo">To demo Menu</string>
 
     <string-array name="dev_platforms">
-    <item>Android</item>
-    <item>Iphone</item>
-    <item>Windows</item>
-    <item>Bada</item>
-    <item>WebOS</item>
-</string-array>
+        <item>Android</item>
+        <item>Iphone</item>
+        <item>Windows</item>
+        <item>Bada</item>
+        <item>WebOS</item>
+    </string-array>
 </resources>

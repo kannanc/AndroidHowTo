@@ -36,6 +36,7 @@
         <activity android:name=".AlertDemo" android:label="@string/alertDemo"/>
         <activity android:name=".WebViewDemo" android:label="@string/browserDemo"/>
         <activity android:name=".GalleryDemo" android:label="@string/galleryDemo"/>
+        <activity android:name=".MenuDemo" android:label="@string/menuDemo"/>
     </application>
     <!--Specify the permissions that the application uses-->
     <uses-permission android:name="android.permission.INTERNET"/>
