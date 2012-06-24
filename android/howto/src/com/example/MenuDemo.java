@@ -26,8 +26,8 @@ public class MenuDemo extends Activity {
    protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.menudemo);
-      m_context1 = (TextView) findViewById(R.id.contextColor);
-      m_context2 = (TextView) findViewById(R.id.contextPlatforms);
+      m_context1 = (TextView) findViewById(R.id.context_color);
+      m_context2 = (TextView) findViewById(R.id.context_platforms);
       TextView optionsMenu = (TextView) findViewById(R.id.resetMenu);
 
       optionsMenu.setOnClickListener(new View.OnClickListener() {
@@ -72,17 +72,17 @@ public class MenuDemo extends Activity {
       super.onCreateContextMenu(menu, v, menuInfo);
       int menuId;
       switch (v.getId()) {
-         case R.id.contextColor:
+         case R.id.context_color:
              createMenu(R.menu.color_menu,menu,"Choose a color");
             break;
-         case R.id.contextPlatforms:
+         case R.id.context_platforms:
             createMenu(R.menu.platforms_menu,menu,"Choose a platform");
             break;
       }
    }
 
    private void createMenu(int menuID,ContextMenu menu, String title) {
-      getMenuInflater().inflate(menuID,menu);
+      getMenuInflater().inflate(menuID, menu);
       menu.setHeaderTitle(title);
    }
 

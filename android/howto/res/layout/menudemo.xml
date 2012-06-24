@@ -5,7 +5,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <TextView android:id="@+id/contextColor"
+    <TextView android:id="@+id/context_color"
               android:layout_height="wrap_content"
               android:layout_width="fill_parent"
               android:gravity="center"
@@ -13,7 +13,7 @@
               android:text="Color Options"
             />
 
-    <TextView android:id="@+id/contextPlatforms"
+    <TextView android:id="@+id/context_platforms"
                   android:layout_height="wrap_content"
                   android:layout_width="fill_parent"
                   android:gravity="center"
