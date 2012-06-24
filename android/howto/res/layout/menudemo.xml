@@ -9,25 +9,25 @@
               android:layout_height="wrap_content"
               android:layout_width="fill_parent"
               android:gravity="center"
+              android:layout_margin="5dip"
               android:textColor="@color/DarkGrey"
-              android:text="Color Options"
+              android:text="Color Context Menu ( Click and Hold)"
             />
 
-    <TextView android:id="@+id/context_platforms"
-                  android:layout_height="wrap_content"
-                  android:layout_width="fill_parent"
-                  android:gravity="center"
-                  android:textColor="@color/DarkGrey"
-                  android:text="Mobile Platforms"
-                />
-
     <TextView android:id="@+id/menuDemoDiv1"
-              android:layout_height="1dip"
-              android:layout_width="match_parent"
-              android:background="@color/white"
-              android:textColor="@color/DarkGrey"
-              android:text=""/>
-
+                 android:layout_height="1dip"
+                 android:layout_width="match_parent"
+                 android:background="@color/white"
+                 android:textColor="@color/DarkGrey"
+                 android:text=""/>
+    
+    <TextView android:id="@+id/menuDemoDiv1"
+                     android:layout_height="1dip"
+                     android:layout_width="match_parent"
+                     android:background="@color/white"
+                     android:textColor="@color/DarkGrey"
+                     android:text=""/>
+    
     <TextView android:id="@+id/resetMenu"
               android:layout_height="wrap_content"
               android:layout_width="match_parent"

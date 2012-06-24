@@ -18,26 +18,29 @@ import java.util.Random;
  */
 public class MenuDemo extends Activity {
 
-   private TextView m_context1;
-   private TextView m_context2;
+   private TextView m_contextColor;
    private final Random rand = new Random();
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.menudemo);
-      m_context1 = (TextView) findViewById(R.id.context_color);
-      m_context2 = (TextView) findViewById(R.id.context_platforms);
-      TextView optionsMenu = (TextView) findViewById(R.id.resetMenu);
-
-      optionsMenu.setOnClickListener(new View.OnClickListener() {
+      m_contextColor = (TextView) findViewById(R.id.context_color);
+      /**
+       * Resets the options menu to start from scratch
+       */
+      TextView tv2 = (TextView) findViewById(R.id.resetMenu);
+      tv2.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
             invalidateOptionsMenu();
          }
       });
-      registerForContextMenu(m_context1);
-      registerForContextMenu(m_context2);
+      /**
+       * Register the View elements in the activity to generate
+       * Context menus
+       */
+      registerForContextMenu(m_contextColor);
    }
 
    @Override
@@ -51,15 +54,24 @@ public class MenuDemo extends Activity {
    }
    //todo: provide a onMenuClickListener
 
+
    @Override
    public boolean onPrepareOptionsMenu(Menu menu) {
       int size = menu.size();
       MenuItem lastItem = menu.getItem(size - 1);
       int itemId = lastItem.getItemId() + 1;
+      /**
+       * Add a new manu item each time the android menu button is clicked
+       */
       menu.add(lastItem.getGroupId(), itemId, lastItem.getOrder(), "option " + itemId);
       return true;
    }
 
+   /**
+    * Handle Options menu selections  by displaying a toast message
+    * @param item
+    * @return
+    */
    @Override
    public boolean onOptionsItemSelected(MenuItem item) {
       String text = item.getTitle() + ":" + item.getItemId();
@@ -69,48 +81,43 @@ public class MenuDemo extends Activity {
 
    @Override
    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-      super.onCreateContextMenu(menu, v, menuInfo);
-      int menuId;
       switch (v.getId()) {
          case R.id.context_color:
-             createMenu(R.menu.color_menu,menu,"Choose a color");
+            createMenu(R.menu.color_menu, menu, "Choose a color");
             break;
-         case R.id.context_platforms:
-            createMenu(R.menu.platforms_menu,menu,"Choose a platform");
-            break;
+         default:
+            super.onCreateContextMenu(menu, v, menuInfo);
       }
    }
 
-   private void createMenu(int menuID,ContextMenu menu, String title) {
+   private void createMenu(int menuID, ContextMenu menu, String title) {
+      /**
+       * Use a MenuInflater associated with the activity to
+       * inflate the Menu layout
+       */
       getMenuInflater().inflate(menuID, menu);
       menu.setHeaderTitle(title);
    }
 
+   /**
+    * Handle context Menu item selections.
+    * @param item
+    * @return
+    */
    @Override
    public boolean onContextItemSelected(MenuItem item) {
       switch (item.getItemId()) {
          case R.id.menu_red:
-            m_context1.setBackgroundResource(R.color.LightRed);
+            m_contextColor.setBackgroundResource(R.color.LightRed);
             return true;
          case R.id.menu_blue:
-            m_context1.setBackgroundResource(R.color.DullBlue);
+            m_contextColor.setBackgroundResource(R.color.DullBlue);
             return true;
          case R.id.menu_green:
-            m_context1.setBackgroundResource(R.color.LightGreen);
-            return true;
-         case R.id.menu_android:
-            Toast.makeText(this,"Android",Toast.LENGTH_SHORT).show();
-            return true;
-         case R.id.menu_windows:
-            Toast.makeText(this,"Windows",Toast.LENGTH_SHORT).show();
-            return true;
-         case R.id.menu_ios:
-            Toast.makeText(this,"IOS",Toast.LENGTH_SHORT).show();
+            m_contextColor.setBackgroundResource(R.color.LightGreen);
             return true;
          default:
             return super.onContextItemSelected(item);
       }
    }
-
-
 }
