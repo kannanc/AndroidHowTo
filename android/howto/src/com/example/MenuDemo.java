@@ -3,13 +3,9 @@ package com.example;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.ContextMenu;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.Random;
 
 /**
  * Provides...
@@ -18,74 +14,53 @@ import java.util.Random;
  */
 public class MenuDemo extends Activity {
 
-    private TextView m_tv1;
-    private final Random rand = new Random();
+   private TextView m_contextColor;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.menudemo);
-        m_tv1 = (TextView) findViewById(R.id.contextmenutxt);
-        TextView tv2 = (TextView) findViewById(R.id.resetMenu);
-        tv2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                invalidateOptionsMenu();
-            }
-        });
-        registerForContextMenu(m_tv1);
-    }
+   @Override
+   protected void onCreate(Bundle savedInstanceState) {
+      super.onCreate(savedInstanceState);
+      setContentView(R.layout.menudemo);
+      m_contextColor = (TextView) findViewById(R.id.context_color);
+      /**
+       * Register the View elements in the activity to generate
+       * Context menus
+       */
+      registerForContextMenu(m_contextColor);
+   }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add(
-                Menu.NONE, // Group ID
-                Menu.FIRST + 1, // ItemId
-                Menu.NONE,  // ordering
-                "Option " + rand.nextInt());// title
-        return super.onCreateOptionsMenu(menu);
-    }
-    //todo: provide a onMenuClickListener
+@Override
+public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+   switch (v.getId()) {
+      case R.id.context_color:
+         createMenu(R.menu.color_menu, menu, "Choose a color");
+         break;
+      default:
+         super.onCreateContextMenu(menu, v, menuInfo);
+   }
+}
+   private void createMenu(int menuID, ContextMenu menu, String title) {
+      /**
+       * Use a MenuInflater associated with the activity to
+       * inflate the Menu layout
+       */
+      getMenuInflater().inflate(menuID, menu);
+      menu.setHeaderTitle(title);
+   }
 
-    @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        int size = menu.size();
-        MenuItem lastItem = menu.getItem(size - 1);
-        int itemId = lastItem.getItemId() + 1;
-        menu.add(lastItem.getGroupId(), itemId, lastItem.getOrder(), "option " + itemId);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        String text = item.getTitle() + ":" + item.getItemId();
-        Toast.makeText(this, text, Toast.LENGTH_LONG).show();
-        return true;
-    }
-
-    @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        super.onCreateContextMenu(menu, v, menuInfo);
-        getMenuInflater().inflate(R.menu.color_menu, menu);
-        menu.setHeaderTitle("Choose a Color");
-    }
-
-    @Override
-    public boolean onContextItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.menu_red:
-                m_tv1.setBackgroundResource(R.color.LightRed);
-                return true;
-            case R.id.menu_blue:
-                m_tv1.setBackgroundResource(R.color.DullBlue);
-                return true;
-            case R.id.menu_green:
-                m_tv1.setBackgroundResource(R.color.LightGreen);
-                return true;
-            default:
-                return super.onContextItemSelected(item);
-        }
-    }
-
-
+   @Override
+   public boolean onContextItemSelected(MenuItem item) {
+      switch (item.getItemId()) {
+         case R.id.menu_red:
+            m_contextColor.setBackgroundResource(R.color.LightRed);
+            return true;
+         case R.id.menu_blue:
+            m_contextColor.setBackgroundResource(R.color.DullBlue);
+            return true;
+         case R.id.menu_green:
+            m_contextColor.setBackgroundResource(R.color.LightGreen);
+            return true;
+         default:
+            return super.onContextItemSelected(item);
+      }
+   }
 }
